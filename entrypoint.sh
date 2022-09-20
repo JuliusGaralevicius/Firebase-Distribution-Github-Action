@@ -25,6 +25,8 @@ if [ -n "${INPUT_TOKEN}" ] ; then
     export FIREBASE_TOKEN="${INPUT_TOKEN}"
 fi
 
+echo ${INPUT_SERVICECREDENTIALSFILE}
+
 firebase \
         appdistribution:distribute \
         "$INPUT_FILE" \
